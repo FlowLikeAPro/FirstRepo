@@ -12,19 +12,19 @@ def sub(firNum, secNum):
 
 firNum = float(input("First Number: "))
 secNum = float(input("Second Number: "))
+op = input("Select operator: ")
 
-def operator():
-  operator = input("Select operator: ")
-  if operator == '+':
+def calculate():
+  if op == '+':
     print(add (firNum, secNum))
-  elif operator == '*':
+  elif op == '*':
     print(multiply (firNum, secNum))
-  elif operator == '-':
+  elif op == '-':
     print(sub (firNum, secNum))
-  elif operator == '/':
+  elif op == '/':
     print(division (firNum, secNum))
   else:
     print("WTF")
     
 if __name__ == "__main__":
-    operator()
+    calculate()
